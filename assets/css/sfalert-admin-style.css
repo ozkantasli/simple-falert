@@ -1,0 +1,68 @@
+/* Simple Falert Admin Settings Styles */
+
+/* Make textareas more usable */
+#sfalert_names, /* ID Changed */
+#sfalert_cities, /* ID Changed */
+#sfalert_message_template { /* ID Changed */
+    width: 100%; /* Width */
+    max-width: 600px; /* Max width limit */
+    min-height: 120px; /* Min height */
+    font-family: monospace; /* Better for code/list input */
+    font-size: 13px;
+}
+
+/* Message template textarea */
+#sfalert_message_template { /* ID Changed */
+    min-height: 80px;
+}
+
+/* Narrow down number inputs */
+#sfalert_min_qty, /* ID Changed */
+#sfalert_max_qty, /* ID Changed */
+#sfalert_display_duration, /* ID Changed */
+#sfalert_interval_time, /* ID Changed */
+#sfalert_max_time_ago { /* ID Changed */
+    width: 80px;
+}
+
+/* Make description paragraphs slightly more prominent */
+.form-table th + td p.description {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #646970; /* Standard WP grey */
+}
+
+/* Better alignment for checkbox labels */
+#sfalert_enable + label, /* ID Changed */
+#sfalert_show_image + label, /* ID Changed */
+#sfalert_link_to_product + label { /* ID Changed */
+     display: inline-block;
+     margin-left: 5px;
+     vertical-align: middle;
+}
+
+/* Add some space between settings sections */
+.sfalert-setting-admin h2 { /* Class Changed */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccd0d4; /* WP standard separator */
+}
+.sfalert-setting-admin h2:first-of-type { /* Class Changed */
+     margin-top: 0; /* No top margin for the first heading */
+}
+
+/* Style code tags */
+.form-table code {
+    background-color: #f0f0f1;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #dcdcde;
+    vertical-align: middle; /* Align better with surrounding text */
+}
+
+/* General form spacing */
+.wrap.sfalert-setting-admin form { /* Class Changed */
+    margin-top: 15px;
+}

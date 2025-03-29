@@ -1,0 +1,211 @@
+# Copyright (C) 2023-2024 Özkan Taşlı
+# This file is distributed under the same license as the Simple Falert plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Falert 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/simple-falert\n"
+"POT-Creation-Date: 2024-03-28 14:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-03-28 14:05:00+00:00\n" # Güncel tarih
+"Last-Translator: Özkan Taşlı <merhaba@ozkantasli.com>\n"
+"Language-Team: Turkish <merhaba@ozkantasli.com>\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.x or WP-CLI\n"
+"X-Domain: simple-falert\n"
+
+#: inc/admin-settings.php:60 inc/admin-settings.php:61
+msgid "Simple Falert Settings"
+msgstr "Simple Falert Ayarları"
+
+#: inc/admin-settings.php:62
+msgid "Simple Falert"
+msgstr "Simple Falert"
+
+#: inc/admin-settings.php:134
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: inc/admin-settings.php:135
+msgid "Content Settings"
+msgstr "İçerik Ayarları"
+
+#: inc/admin-settings.php:136
+msgid "Appearance & Timing"
+msgstr "Görünüm ve Zamanlama"
+
+#: inc/admin-settings.php:140
+msgid "Enable Plugin"
+msgstr "Eklentiyi Etkinleştir"
+
+#: inc/admin-settings.php:143
+msgid "Name List (one per line)"
+msgstr "İsim Listesi (her satıra bir tane)"
+
+#: inc/admin-settings.php:144
+msgid "City List (one per line)"
+msgstr "Şehir Listesi (her satıra bir tane)"
+
+#: inc/admin-settings.php:145
+msgid "Minimum Quantity"
+msgstr "Minimum Adet"
+
+#: inc/admin-settings.php:146
+msgid "Maximum Quantity"
+msgstr "Maksimum Adet"
+
+#: inc/admin-settings.php:147
+msgid "Maximum Time Ago (Hours)"
+msgstr "Maksimum Geçen Süre (Saat)"
+
+#: inc/admin-settings.php:148
+msgid "Message Template"
+msgstr "Mesaj Şablonu"
+
+#: inc/admin-settings.php:151
+msgid "Display Duration (Seconds)"
+msgstr "Gösterim Süresi (Saniye)"
+
+#: inc/admin-settings.php:152
+msgid "Interval Between Notifications (Seconds)"
+msgstr "Bildirimler Arası Süre (Saniye)"
+
+#: inc/admin-settings.php:153
+msgid "Show Product Image"
+msgstr "Ürün Resmini Göster"
+
+#: inc/admin-settings.php:154
+msgid "Link Notification to Product"
+msgstr "Bildirimi Ürüne Bağla"
+
+#: inc/admin-settings.php:155
+msgid "Popup Position"
+msgstr "Popup Pozisyonu"
+
+#: inc/admin-settings.php:156
+msgid "Background Color"
+msgstr "Arka Plan Rengi"
+
+#: inc/admin-settings.php:157
+msgid "Text Color"
+msgstr "Metin Rengi"
+
+# Animasyon msgid'leri kaldırıldı
+
+#: inc/admin-settings.php:205
+msgid "Maximum Quantity cannot be less than Minimum Quantity. It has been automatically adjusted."
+msgstr "Maksimum Adet, Minimum Adetten küçük olamaz. Otomatik olarak düzeltildi."
+
+#: inc/admin-settings.php:221 simple-falert.php:262
+msgid "{name} from {city} purchased {qty} {product_name} {time_ago}."
+msgstr "{city} şehrinden {name}, {qty} adet {product_name} ürününü {time_ago} satın aldı."
+
+#: inc/admin-settings.php:238
+msgid "Yes, show fake sale notifications."
+msgstr "Evet, sahte satış bildirimlerini göster."
+
+#: inc/admin-settings.php:246
+msgid "Enter one name per line."
+msgstr "Her satıra bir isim girin."
+
+#: inc/admin-settings.php:254
+msgid "Enter one city per line."
+msgstr "Her satıra bir şehir girin."
+
+#: inc/admin-settings.php:270
+msgid "Should not be less than Minimum Quantity."
+msgstr "Minimum Adetten küçük olmamalıdır."
+
+#: inc/admin-settings.php:276 inc/admin-settings.php:284
+msgid "Seconds"
+msgstr "Saniye"
+
+#: inc/admin-settings.php:278
+msgid "How long each notification stays visible."
+msgstr "Her bildirimin ne kadar süre görünür kalacağı."
+
+#: inc/admin-settings.php:286
+msgid "The pause between showing notifications."
+msgstr "Bildirimleri gösterme arasındaki bekleme süresi."
+
+#: inc/admin-settings.php:292
+msgid "Hours"
+msgstr "Saat"
+
+#: inc/admin-settings.php:294
+msgid "Maximum limit for the random \"X time ago\" display."
+msgstr "Rastgele \"X zaman önce\" gösterimi için maksimum sınır."
+
+#: inc/admin-settings.php:306
+#, php-format
+msgid "Available variables: %1$s, %2$s, %3$s, %4$s, %5$s."
+msgstr "Kullanılabilir değişkenler: %1$s, %2$s, %3$s, %4$s, %5$s."
+
+#: inc/admin-settings.php:312
+msgid "Product name will be automatically bolded."
+msgstr "Ürün adı otomatik olarak kalın yazılacaktır."
+
+#: inc/admin-settings.php:320
+msgid "Yes, show the product thumbnail in the notification."
+msgstr "Evet, ürünün küçük resmini bildirimde göster."
+
+#: inc/admin-settings.php:328
+msgid "Yes, link the notification to the corresponding product page."
+msgstr "Evet, bildirimi ilgili ürün sayfasına bağla."
+
+#: inc/admin-settings.php:336
+msgid "Bottom Left"
+msgstr "Sol Alt"
+
+#: inc/admin-settings.php:337
+msgid "Bottom Right"
+msgstr "Sağ Alt"
+
+#: inc/admin-settings.php:346
+msgid "Select where the notification popup should appear on the screen."
+msgstr "Bildirim popup'ının ekranda nerede görüneceğini seçin."
+
+# Animasyon metinleri kaldırıldı
+
+#: simple-falert.php:44
+msgid "Simple Falert requires WooCommerce to be installed and activated."
+msgstr "Simple Falert'in çalışması için WooCommerce'in kurulu ve etkin olması gerekir."
+
+#: simple-falert.php:148 simple-falert.php:300
+msgid "Close Notification"
+msgstr "Bildirimi Kapat"
+
+#: simple-falert.php:149 simple-falert.php:301
+msgid "Close"
+msgstr "Kapat"
+
+#: simple-falert.php:190 simple-falert.php:237
+msgid "Simple Falert is not active."
+msgstr "Simple Falert aktif değil."
+
+#: simple-falert.php:212 simple-falert.php:259
+msgid "No suitable products found to display."
+msgstr "Görüntülenecek uygun ürün bulunamadı."
+
+#: simple-falert.php:216
+msgid "Could not retrieve product data."
+msgstr "Ürün verisi alınamadı."
+
+#: simple-falert.php:226
+msgid "Someone"
+msgstr "Birisi"
+
+#: simple-falert.php:231
+msgid "nearby"
+msgstr "yakınlardan"
+
+#: simple-falert.php:243
+#, php-format
+msgid "%s ago"
+msgstr "%s önce"
+
+#: simple-falert.php:308
+msgid "Simple Falert requires WooCommerce to be installed and activated to function properly."
+msgstr "Simple Falert'in düzgün çalışması için WooCommerce'in kurulu ve etkin olması gerekir."
