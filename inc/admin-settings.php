@@ -90,6 +90,7 @@ class Simple_Falert_Admin_Settings {
     }
 
     public function sanitize_settings( $input ) {
+        $input = is_array( $input ) ? $input : [];
         $new_input = []; $defaults = $this->get_default_settings();
         $checkboxes = ['sfalert_enable', 'sfalert_show_image', 'sfalert_link_to_product'];
         foreach ( $checkboxes as $key ) { $new_input[$key] = ( isset( $input[$key] ) && $input[$key] === 'on' ) ? 'on' : 'off'; }

@@ -71,7 +71,8 @@ function sfalert_initialize() {
         private $options;
 
         public function __construct() {
-            $this->options = get_option( 'sfalert_settings' );
+            $options = get_option( 'sfalert_settings', [] );
+            $this->options = is_array( $options ) ? $options : [];
 
             add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_frontend_assets' ] );
             add_action( 'wp_footer', [ $this, 'add_popup_container' ] );
@@ -148,10 +149,14 @@ function sfalert_initialize() {
          */
         public function ajax_get_notification_data() {
             check_ajax_referer( 'sfalert_notification_nonce', 'nonce' );
-            $this->options = get_option( 'sfalert_settings' );
+            $options = get_option( 'sfalert_settings', [] );
+            $this->options = is_array( $options ) ? $options : [];
 
             if ( empty( $this->options['sfalert_enable'] ) || $this->options['sfalert_enable'] !== 'on' ) {
-                wp_send_json_error( [ 'message' => __( 'Simple Falert is not active.', 'simple-falert' ) ] );
+                wp_send_json_error( [
+                    'code'    => 'plugin_inactive',
+                    'message' => __( 'Simple Falert is not active.', 'simple-falert' ),
+                ] );
             }
 
             // Fetch Products (Warnings about tax_query/meta_query are noted but acceptable for now)
